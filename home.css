@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #c7384f;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.banner {
+	background-image: url("https://plus.unsplash.com/premium_photo-1664537975122-9c598d85816e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cnVubmluZyUyMHNob2V8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.banner h2 {
+	font-size: 48px;
+	color: red;
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #c7384f;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #af2c42;
+}
+
+.featured {
+	background-color: #f8f8f8;
+	padding: 50px;
+}
+
+.featured h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 40px;
+}
+
+.product img {
+	display: block;
+	width: 100%;
+	height: 300px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.product h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.product p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.newsletter {
+	background-color: #333;
+	padding: 50px;
+}
+
+.newsletter h2 {
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.newsletter form {
+	display: flex;
+	align-items: center;
+}
+
+.newsletter input[type="email"] {
+	padding: 10px;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	width: 70%;
+}
+
+.newsletter button {
+	background-color: #c7384f;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+}
+
+.newsletter button:hover {
+	background-color: #af2c42;
+}

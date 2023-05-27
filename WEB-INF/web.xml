@@ -1,0 +1,12 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>UserRegistration</servlet-name>
+		<servlet-class>UserRegistration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserRegistration</servlet-name>
+		<url-pattern>/UserRegistration</url-pattern>
+	</servlet-mapping>
+
+</web-app>

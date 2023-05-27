@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta charset="utf-8">
+    		<title>OUTFEAT</title>
+    		<link rel="stylesheet" href="login.css">
+			<style>
+				.text-center {
+					text-align: center;
+					}
+
+					.p-3 {
+					padding: 1rem;
+					}
+
+					.background-opacity {
+					background-color: rgba(0, 0, 0, 0.2);
+					}
+
+					.text-dark {
+					color: #000;
+					}
+			</style>
+  	</head>
+	<body class="login">
+	    <div class="form">
+		<span class="form__title">Login</span>
+		<form align="center" name="myform" action="http://localhost:8080/Footwear/AuthLogin.jsp" method="post" onSubmit="return validation()">
+			<div class="form__input">
+				<i class="ri-user-line"></i>
+				<input type="text" placeholder= "Username" name="username" required>
+				<span class="bar"></span>
+			</div>
+			<div class="form__input">
+				<i class="ri-lock-line"></i>
+				<input type="password" placeholder="Password" name="password" required>
+				<span class="bar"></span>
+			</div>
+			<button type "submit" class="form__button">Login</button>
+			<span class="form__switch">
+				Don't have an account? <a href="registration.html">Sign Up</a>
+			</span>
+		</form>
+	    </div>
+
+		<div class='text-center p-3 background-opacity'>
+			&copy; 2023 Yedulla Anoop Reddy [20071A0560]
+			</div>
+
+	<script type="text/javascript">
+		function validation(){
+			let uname=document.myform.username.value;
+			let unamereq=/^[A-Za-z]+$/;
+			if(uname.match(unamereq)){	
+				return true;
+			}
+			else{ window.alert("Username should contain ONLY alphabets");return false;}
+			
+		}
+	</script>
+	</body>
+</html>
+

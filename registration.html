@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>OUTFEAT</title>
+	    <link rel="stylesheet" href="login.css">
+		<style>
+			.text-center {
+				text-align: center;
+				}
+
+				.p-3 {
+				padding: 1rem;
+				}
+
+				.background-opacity {
+				background-color: rgba(0, 0, 0, 0.2);
+				}
+
+				.text-dark {
+				color: #000;
+				}
+		</style>
+	</head>
+	<body class="login">
+	    <div class="form">
+		<span class="form__title">Registration</span>
+		<form name="myform" action="http://localhost:8080/Footwear/UserRegistration" method="post" onSubmit="return validation()">
+			<div class="form__input">
+				<i class="ri-user-line"></i>
+				<input type="text" placeholder= "Username" name="username" required>
+				<span class="bar"></span>
+			</div>
+			<div class="form__input">
+				<i class="ri-mail-line"></i>
+				<input type="text" placeholder="Email" name="email" required>
+				<span class="bar"></span>
+			</div>
+			<div class="form__input">
+				<i class="ri-lock-line"></i>
+				<input type="password" placeholder="Password" name="password" required>
+				<span class="bar"></span>
+			</div>
+			<div class="form__input">
+				<i class="ri-lock-line"></i>			
+				<input type="password" placeholder="Confirm password" name="confirmpassword" required>
+				<span class="bar"></span>
+			</div>
+			<div class="form__input">
+				<i class="ri-mail-line"></i>
+				<input type="text" placeholder="Phone No" name="phoneno" required>
+				<span class="bar"></span>
+			</div>
+			<button type "submit" class="form__button">Sign up</button>
+			<span class="form__switch">
+				Already have an account? <a href="login.html">Login</a>
+			</span>
+		</form>
+		</div>
+
+	<script type="text/javascript">
+		function validation(){
+			let uname=document.myform.username.value;
+			let unamereq=/^[A-Za-z]+$/;
+			if(uname.match(unamereq)){
+
+				let email=document.myform.email.value;
+				let emailreq=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if(email.match(emailreq)){
+
+					let pno=document.myform.phoneno.value;
+					let pnoreq=/^\d{10}$/;
+					if(pno.match(pnoreq)){
+						let pass=document.myform.password.value;
+						let confirmpass=document.myform.confirmpassword.value;
+						if(pass===confirmpass){
+							return true;
+						}
+						else{window.alert("Passwords doesn't match.");return false;}
+					}
+					else{ window.alert("Invalid Phone Number");return false;}
+				}
+
+				else{ window.alert("Invalid Email pattern");return false;}				
+
+			}
+			else{ window.alert("Username should contain ONLY alphabets");return false;}
+			
+		}
+	</script>
+	<div class='text-center p-3 background-opacity'>
+		&copy; 2023 Yedulla Anoop Reddy 
+		</div>
+</body>
+</html>
