@@ -45,10 +45,10 @@ This is a web application for an online footwear store built using HTML, CSS, Ja
 
 ## WebApplication Images
 - Home
-    ![Example Image](images/home1.png)
+    ![Home Page](images/home1.png)
 - catalogue
-![Example Image](images/catalogue.png)
+    ![Products Catalogue](images/catalogue.png)
 - Cart
-![Example Image](images/cart.png)
+    ![Cart page](images/cart.png)
 - Checkout
-![Example Image](images/checkout.png)
+    ![Checkout page after order is placed.](images/checkout.png)
