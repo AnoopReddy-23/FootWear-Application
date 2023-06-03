@@ -43,12 +43,4 @@ This is a web application for an online footwear store built using HTML, CSS, Ja
 - Review your order and confirm the purchase.
 - As an admin, access the admin panel to manage products, inventory, and user accounts.
 
-## WebApplication Images
-- Home
-    ![Home Page](./images/home1.png)
-- catalogue
-    ![Products Catalogue](./images/catalogue.png)
-- Cart
-    ![Cart page](./images/cart.png)
-- Checkout
-    ![Checkout page after order is placed.](./images/checkout.png)
+
