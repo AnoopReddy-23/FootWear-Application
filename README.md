@@ -45,7 +45,7 @@ This is a web application for an online footwear store built using HTML, CSS, Ja
 
 ## WebApplication Images
 - Home
-    ![Home Page](images/home1.png)
+    ![Home Page](https://github.com/AnoopReddy-23/FootWear-Application/tree/master/images/home1.png)
 - catalogue
     ![Products Catalogue](images/catalogue.png)
 - Cart
